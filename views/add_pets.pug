@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title Add Pet Information
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            form(method="POST")
+                label(for="petName") Pet Name
+                input(type="text" name="petName" required)
+                label(for="petType") Pet type
+                input(type="text" name="petType" required)
+                label(for="age") Age
+                input(type="number" name="age" required)
+                input(type="submit" value="Submit")

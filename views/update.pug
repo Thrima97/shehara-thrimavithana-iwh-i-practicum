@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        title Update contact info
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            p User: #{userEmail}
+            p NIC Number: #{nicNumber}
+            form(method="POST")
+                label(for="newNicVal") NIC Number
+                input(type="text" name="newNicVal" required)
+                input(type="submit" value="Submit")

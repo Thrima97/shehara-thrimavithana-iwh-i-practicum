@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        title Update contact info
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            p Pet Name: #{name}
+            p Type: #{type}
+            p Age: #{age}
+            form(method="POST")
+                label(for="petName") Pet Name
+                input(type="text" name="petName")
+                label(for="petType") Type 
+                input(type="text" name="petType")
+                label(for="age") Age
+                input(type="number" name="age")
+                input(type="submit" value="Submit")

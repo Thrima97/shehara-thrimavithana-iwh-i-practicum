@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/css/style.css")
+    body   
+        h1 Pet Update Table 
+        table(style='width:100%')
+            tr
+                th Pet Name
+                th Type 
+                th Age
+            each pets in data 
+                tr
+                    td #{pets.properties.name}
+                    td #{pets.properties.type} 
+                    td #{pets.properties.age} 
+                    td 
+                        a(href="/update-cobj?ObjectId="+ pets.id) edit 
